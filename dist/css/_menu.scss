@@ -22,14 +22,17 @@
         transform: rotate(180deg);
 
         .btn-line {
+
             // Line 1 - Rotate
             &:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
             }
+
             // Line 2 - Hide 
             &:nth-child(2) {
                 opacity: 0;
             }
+
             // Line 3 - Rotate
             &:nth-child(3) {
                 transform: rotate(-45deg) translate(7px, -6px);
@@ -58,7 +61,7 @@
         justify-content: center;
         float: left;
         width: 50%;
-        height:100vh;
+        height: 100vh;
         overflow: hidden;
     }
 
@@ -90,7 +93,7 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url('../img/portrait.jpg') center center/cover;
+            background: url('../img/portrait2.jpg') center center/cover;
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
@@ -99,13 +102,14 @@
     .nav-item {
         transform: translate3d(600px, 0, 0);
         @include easeOut;
+
         &.show {
             // Slide in from right
             transform: translate3d(0, 0, 0);
         }
 
         &.current {
-            > a {
+            >a {
                 color: $secondary-color;
             }
         }
