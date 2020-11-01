@@ -249,7 +249,8 @@ main#home h1 {
 .about-info {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'bioimg bio bio' 'job1 job2 job3';
+      grid-template-areas: 'bioimg bio bio'
+ 'job1 job2 job3';
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -437,7 +438,11 @@ footer {
     height: 150px;
   }
   .about-info {
-        grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
+        grid-template-areas: 'bioimg'
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3';
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
